@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 闭包
+    // 缺点:内存泄漏
+    // 闭包原理: 有权限访问其他函数的作用域的函数
+    // 1. 阻止作用域被js垃圾回收
+    // 2. 创建私有变量
+    // 3. 创建块级作用域
+    function foo() {
+      var a = 2;
+      function fn() {
+        console.log(a)
+      }
+      return fn();
+    }
+    foo();
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 数组去重
+    // /set typeof includes map reduce
+    // [1, 2, 3, 2, 4, 3] uniq
+    let array = [1, 2, 3, 2, 4, 3];
+    function uniq1(arr) {
+      return [...new Set(arr)];
+    }
+    function uniq2(arr) {
+      let result = [];
+      for (let i = 0;i < arr.length; i++) {
+        if (result.indexOf(arr[i]) === -1) {
+          result.push(arr[i]);
+        }
+      }
+      return result;
+    }
+    function uniq3(arr) {
+      let result = [];
+      for (let i = 0; i < arr.length; i++) { // 可以改成map,forEach,for of,for in等
+        if (!result.includes(arr[i])) {
+          result.push(arr[i]);
+        }
+      }
+      return result;
+    }
+    function uniq4(arr) {
+      let map = new Map();
+      let result = [];
+      for (let i = 0; i < arr.length; i++) {
+        // console.log(map.get(arr[i]))
+        if (!map.get(arr[i])) {
+          map.set(arr[i], true);
+          result.push(arr[i]);
+        }
+      }
+      return result;
+    }
+    // console.log(uniq4(array));
+  </script>
+</body>
+</html>
