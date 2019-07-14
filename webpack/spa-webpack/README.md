@@ -23,4 +23,4 @@ magic comment 魔法注释
 应用 路由
 import Home from 'lazy!./components/Home';
 
-用babel-loader 检测有没有 lazy! 换成 magic comment
+用 babel-loader 检测有没有 lazy! 换成 magic comment
