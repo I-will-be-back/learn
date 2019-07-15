@@ -39,8 +39,7 @@
       }
     }
     function debounce(func, wait) {
-    var timeout;
-
+      var timeout;
       return function () {
         var context = this;
         var args = arguments;
@@ -50,7 +49,7 @@
         }, wait);
       }
     }
-    // const index = 11;
+  // const index = 11;
     let oSubmit = document.getElementById('submit');
     const oDebounce = throttle(() => test(), 3000);
     oSubmit.addEventListener('click', oDebounce);

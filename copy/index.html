@@ -31,7 +31,7 @@
     * 实现一个深拷贝
     * 递归拷贝
     */
-    function deeoClone(obj, hash = new WeaMap()) {
+    function deepClone(obj, hash = new WeaMap()) {
       if (obj instanceof RegExp) return new RegExp(obj);
       if (obj instanceof Date) return new Date(obj);
       // 如果不是引用数据类型, 直接返回
