@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 构造函数不需要返回值，如果有返回值，返回值如果不是对象(null也忽略)则忽略返回值，是对象则返回对象。
+    function Person(name) {
+      this.name = name;
+      return null;
+    }
+    let p = new Person('cccs');
+    console.log(p);
+    // for in 和 for of的原理及区别                                                                                                                                                                                                                                                                                                                                        
+  </script>
+</body>
+</html>
