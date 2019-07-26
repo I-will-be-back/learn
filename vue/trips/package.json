@@ -1,5 +1,5 @@
 {
-  "name": "cheap",
+  "name": "trips",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "I-will-be-back <1505013204@qq.com>",
@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "mand-mobile": "^2.3.3",
+    "qs": "^6.7.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.1"

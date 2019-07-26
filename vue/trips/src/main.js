@@ -5,15 +5,19 @@ import mandMobile from 'mand-mobile';
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+// 请求拦截器
+import requestPlugin from './request/http';
+import store from './store/index';
 
 Vue.use(mandMobile);
-
+Vue.use(requestPlugin);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
 });
